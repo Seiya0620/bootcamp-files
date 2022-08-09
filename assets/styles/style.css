@@ -1,0 +1,104 @@
+h2, p {
+    color: pink;
+}
+
+/* parent child */
+.chapter-1 p {
+    color: darkblue;
+}
+
+/* all <p> inside class chapter-1 */
+
+/*** Font family */
+h1, h2 {
+    font-family: serif;
+}
+
+h3 {
+    font-family: sans-serif;
+}
+
+/* Font size */
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 2em;
+    /* 1em = 16px */
+}
+h3 {
+    font-size: 150%;
+    /* 100% 16px */
+}
+/* font-weight */
+h2 {
+    font-weight: 200;
+}
+
+.chapter-2 a {
+    font-weight: normal;
+}
+
+/* font style */
+.chapter {
+    font-style: italic;
+
+}
+
+/* Text Transformation */
+h1 {
+    text-transform: uppercase;
+}
+
+h3 {
+    text-transform: lowercase;
+}
+
+.chapter-3 {
+    text-transform: capitalize;
+}
+
+/* decoracion */
+h1 {
+    text-decoration: underline;
+}
+
+.chapter-1 {
+    text-decoration: none;
+}
+
+/* Alignment */
+h1, h2 {
+    text-align: center;
+}
+
+#chapter-two {
+    text-align: right;
+}
+
+/* shadow */
+h1 {
+    text-shadow: 3px 2px 3px red;
+    /* hr + right - left */
+}
+
+/* indent */
+.chapter-1 p {
+    text-indent: 50px;
+}
+
+/* spacing */
+h1 {
+    letter-spacing: 3px;
+}
+
+.chapter-3 p {
+    letter-spacing: -1px;
+}
+
+.chapter-2 p {
+    word-spacing: 5px;
+}
+
+

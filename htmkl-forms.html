@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+   <form action="method="">
+    <fieldset>
+        <legend>REGISTRATION</legend>
+        <div>
+            <!-- First Name -->
+            <label for="first-name">First Name:
+            <input type="text" name="first_name" id=""first-name" placeholder="Enter your first name here"
+            required>
+        </label>
+
+        <!-- Last Name -->
+        <label for="last-name">Last Name:
+            <input type="text" name="last_name" id=""last-name" placeholder="Enter your last name here"
+            required>
+        </label>
+
+        <!-- Email -->
+        <label for="email">Mmail:
+            <input type="email" name="email" id="email" placeholder="Enter your email here" required>
+        </label>
+
+        <br><br>
+
+        <!-- Username & Password -->
+        <div>
+            <label for="username">User name:
+                <input type="text" name="User name" id="username" placeholder="Enter your user name here" required max="8" min="5">
+            </label>
+            <label for="password">password:
+                <input type="text" name="password" id="password"  placeholder="Enter your password here" required>
+            </label>
+        </div>
+
+
+    </div>
+
+    </fieldset>
+
+    <br>
+
+    <div>
+        <p>Coments:</p>
+        <textarea name="Coments" id="coments" cols="65" rows="10"></textarea>
+    </div>
+
+    <br>
+
+    <div>
+        <p>Please select favor music genre</p>
+        <input type="radio" name="genre" value="rock">Rock
+        <input type="radio" name=genre" value="pop">Pop
+        <input type="radio" name="genre" value="alternative">alternative
+        <input type="radio" name="genre" value="Jazz">jazz
+    </div>
+
+    <br>
+
+    <div>
+        <p>Please select your favorit food:</p>
+        <input type="checkbox" name="food" id="ramen">Ramen
+        <input type="checkbox" name="food" id="sushi">Sushi
+        <input type="checkbox" name="food" id="sashimi">Sashimi
+        <input type="checkbox" name="food" id="gyuudon">Gyudon
+    </div>
+
+    <br>
+
+    <div>
+        <p>What is your devaice?</p>
+        <select name="devaice">
+            <option disabled selected>--Select your devaice--</option>
+            <option value="macbook pro">Macbook Pro</option>
+            <option value="micro">Micro</option>
+            <option value="ipad">Ipad</option>
+            <option value="razer">Razer</option>
+            <option value="iphon">Iphon</option>
+        </select>
+    </div>
+
+    <br>
+
+    <p>What is your devaice?</p>
+    <select name="devaice" multiple>
+        <option disabled selected>--Select your devaice--</option>
+        <option value="macbook pro">Macbook Pro</option>
+        <option value="micro">Micro</option>
+        <option value="ipad">Ipad</option>
+        <option value="razer">Razer</option>
+        <option value="iphon">Iphon</option>
+    </select>
+
+
+    <br>
+
+    <div>
+        <p>Upload</p>
+        <input type="file" name="upload_image">
+    </div>
+
+    <br>
+    <div>
+        <input type="submit" value="submit" name="bttn_submit">
+        <button type="submit" name="bttn_submit">submit</button>
+    </div>
+   </form>
+</body>
+</html>

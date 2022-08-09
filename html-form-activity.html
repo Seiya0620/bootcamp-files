@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms Activity</title>
+</head>
+<link rel="stylesheet" href="assets/styles/style.css">
+<body>
+    <h1 style="background-color:aquamarine">Travel Booking Form</h1>
+
+    <hr>
+
+    <form action=""method="">
+        <fieldset>
+            <legend>REGISTRATION</legend>
+    
+                <!-- First_Name -->
+                <label for="first-name">First Name:
+                    <input type="text" name="first_name" id="first-name" placeholder="Enter your first name here" required>
+
+                </label>
+
+                <!-- Last_Name -->
+                <label for="last-name">Last Name:
+                    <input type="text" name="last_name" id="last-name" placeholder="Enter your last name here" required>
+                </label>
+
+                <br>
+                
+                <!-- E-mail -->
+                <label for="e-mail">Email:
+                    <input type="email" name="email" id="e-mail" placeholder="Enter your e-mail here" required>
+                </label>
+
+                <br>
+
+                <!-- Phone Number -->
+                <label for="phone-number">Phone Number:
+                    <input type="text" name="phone_number" id="phone-number" placeholder="Enter your phone number here" required>
+                </label>
+
+                <br>
+
+                <!-- Number OF Travelers -->
+                <label for="num-travelers">Number of travelers:
+                    <input type="number" name="num_travelers" id="num-travelers" placeholder="Enter the number of travelers here" required>
+                </label>
+              
+        </fieldset>
+
+        <br>
+
+        <h2 style="background-color:darkgoldenrod">Your Request</h2>
+        <hr>
+
+        <label for="country" >Where would you like to travel?</label>
+        <select name="country" id="country" multiple>
+            <option value="" hidden>Choose the country</option>
+            <option value="japan">Japan</option>
+            <option value="korea">Korea</option>
+            <option value="china">China</option>
+            <option value="philippines">Philippines</option>
+            <option value="australia">Australia</option>
+            <option value="new zealand">New Zealand</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="spain">Spain</option>
+            <option value="france">France</option>
+        </select>
+
+        <br><br>
+
+        <label for="city">What is your city of departure?</label>
+        <input type="text" name="city" id="city" placeholder="Enter your city here" required>
+
+        <br><br>
+   
+        <p>What kind of activity would you like?</p>
+        <input type="checkbox" name="activity" id="shopping" value="shopping">
+        <label for="shopping">Shopping</label>
+
+        <input type="checkbox" name="activity" id="fishing" value="fishing">
+        <label for="fishing">Fishing</label>
+
+        <input type="checkbox" name="activity" id="diving" value="diving">
+        <label for="diving">Diving</label>
+
+        <input type="checkbox" name="activit" id="bungee-jumping" value="bungee jumping">
+        <label for="bungee-jumping">Bungee Jumping</label>
+    
+        <br><br>
+
+        <p>What kind of food would you like to eat?</p>
+        <input type="radio" name="food" id="seafood" value="seafood">
+        <label for="seafood">Seafood</label>
+        
+        <input type="radio" name="food" id="meat-dish" value="meat dish">
+        <label for="meat-dish">Meat dish</label>
+
+        <input type="radio" name="food" id="vegetable-dish" value="vegetable dish">
+        <label for="vegetable-dish">Vegetable dish</label>
+    
+        <br><br>
+    
+        <label for="comments">Comments:</label>
+        <textarea name="comments" id="comments" cols="65" rows="10"></textarea>
+
+        <br><br>
+    
+        <label for="upload-image" style="background-color:chartreuse">Please upload your passport</label>
+        <input type="file" name="upload_image" id="upload-image">
+    
+        <br><br>
+            
+        <input type="submit" value="Submit" name="btn_submit">
+      
+    </form>
+</body>
+</html>
